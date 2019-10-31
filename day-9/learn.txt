@@ -1,0 +1,39 @@
+Hashing and HMAC
+
+crypto module in node js is used to provide cryptographic functionalities.
+It includes a set of wrappers for OpenSSL's hash, HMAC, verify, cipher, decipher and sign functions.
+
+What is hashing?
+Hashing is a process of generating a fixed length value from a string using mathematical functions.
+It is used for providing security.
+
+Features of Hash generated using hashing:
+1.Unique 2.Fixed Length 3.Irreversible
+
+
+Unique: In hashing unique input === unique output.
+
+Fixed Length: Hashing algorithms always generate the hash with the same length. The length of input does not affect the length of the output.
+
+Irreversible: Generated hashes are Irreversible in nature. We can not change the hash to the input text again.
+
+Examples of different hashing algorithms
+1. md5 hashing algorithm: hash value is exactly 32 digits long
+2. whirlpool
+3. SHA1
+4. SHA224
+5. SHA256
+6. SHA384
+7. SHA512
+8. ripemd-160
+
+Performing hashing on a file:
+
+Hashing a file is done using 1.node.js streams 2.node.js filesystem 3.SHA256 
+
+
+Problems with hashing: The rainbow table which is precomputed table for reversng cryptographic hash functions.
+
+What is HMAC ?
+HMAC (keyed-hash message authentication code) is a kind of MAC (Message Authentication Code ) whicj involves performing the hash functions using a secret cryptograhic key.
+Just like hash, in HMAC also every generated hash is using hashing algorithms, hence exhibit same features.
